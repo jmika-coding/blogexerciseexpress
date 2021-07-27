@@ -1,0 +1,13 @@
+CREATE TABLE post(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  post TEXT NOT NULL,
+  likes INT
+);
+
+CREATE TABLE comment(
+  id SERIAL PRIMARY KEY,
+  post_id INT,
+  comment VARCHAR(255),
+  FOREIGN KEY (post_id) REFERENCES post(id) ON UPDATE CASCADE ON DELETE CASCADE
+);

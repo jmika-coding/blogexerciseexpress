@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  postgres_blog_post:
+    image: postgres:13.3
+    volumes:
+      - ./data/db/postgres_blog_post/data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: postgres_blog_post
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+    ports:
+      - 5432:5432

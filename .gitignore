@@ -1,0 +1,15 @@
+# Ignore directory
+dist/
+node_modules/
+
+# env
+.env
+
+# docker
+dev/docker/data/db
+
+# Husky
+.husky/
+
+# For mac
+.DS_Store
