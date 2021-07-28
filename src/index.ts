@@ -6,7 +6,7 @@ import {
   findBlogPosts,
   postBlogPost,
   updateBlogPost,
-} from "./find/blogPost/blogPostController"
+} from "./CRUD/blogPost/blogPostController"
 import { router } from "typera-express"
 import { runMigrations } from "./db/postgresClient"
 import { getAppPort } from "./configuration/configurationService"
