@@ -45,6 +45,6 @@ As this is only the backend, to use it without frontend, you could use curl
 Exemple (in JSON, for correct type validation POST and PATCH):
 
 - `curl --header "Content-Type: application/json" -X GET http://localhost:3000/blogpost -H "Origin: http://localhost"`
-- `curl --header "Content-Type: application/json" -X POST --data '{"title":"My First Title", "content":"My First Post", "likes":10}' http://localhost:3000/blogpost -H "Origin: http://localhost"`
+- `curl --header "Content-Type: application/json" -X POST --data '{"title":"My First Title", "post":"My First Post", "likes":10}' http://localhost:3000/blogpost -H "Origin: http://localhost"`
 - `curl --header "Content-Type: application/json" -X DELETE http://localhost:3000/blogpost/2 -H "Origin: http://localhost"`
-- `curl --header "Content-Type: application/json" -X PATCH --data '{"content":"My Modified Post", "likes":20}' http://localhost:3000/blogpost/4 -H "Origin: http://localhost"`
+- `curl --header "Content-Type: application/json" -X PATCH --data '{"post":"My Modified Post", "likes":20}' http://localhost:3000/blogpost/4 -H "Origin: http://localhost"`
